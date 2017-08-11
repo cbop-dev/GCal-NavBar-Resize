@@ -3,7 +3,7 @@
 // @namespace   calendar.google.com
 // @author cbop-dev (https://github.com/cbop-dev)
 // @version 0.3.0
-// @description Makes the G-Cal navigation sidebar re-sizable. Adds a column border that can be dragged with the mouse.
+// @description Makes the G-Cal navigation sidebar re-sizable and hideable. Adds a column border and drag-button that can be dragged with the mouse, and a show/hide toggle button.
 // @license MIT License (Expat)
 // @include       https://calendar.google.com/calendar/render*
 // @grant       none
