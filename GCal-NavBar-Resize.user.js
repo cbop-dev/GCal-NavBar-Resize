@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Google Calendar - Resize Navigation Sidebar
 // @namespace   calendar.google.com
-// @version 0.2
+// @version 0.2.2
 // @description Makes the G-Cal navigation sidebar re-sizable. Adds a column border that can be dragged with the mouse.
-// @include     https://calendar.google.com/calendar/render#main*
 // @license MIT License (Expat)
+// @include       https://calendar.google.com/calendar/render*
 // @grant       none
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 // ==/UserScript==
@@ -68,6 +68,6 @@ $(window).on('hashchange', function() {
   else
   {
     //window.alert("showing!");
-    $('#ghostbar').show()
+    $('#ghostbar').show();
   }
 });
