@@ -2,7 +2,7 @@
 // @name        Google Calendar - Resize Navigation Sidebar
 // @namespace   calendar.google.com
 // @author cbop-dev (https://github.com/cbop-dev)
-// @version 0.3.0
+// @version 0.3.7
 // @description Makes the G-Cal navigation sidebar re-sizable and hideable. Adds a column border and drag-button that can be dragged with the mouse, and a show/hide toggle button.
 // @license MIT License (Expat)
 // @include       https://calendar.google.com/calendar/render*
@@ -48,7 +48,7 @@ var ghostEZdragbar = $('<div>',
                             color: 'white',
                             'text-align': 'center'
                         },
-                        text: '🡸🡺',
+                        text: '\u25C4\u25BA',
                         class: 'ghost'
                        }).appendTo('#maincell');
 
@@ -71,7 +71,7 @@ var ghostToggleNav = $('<div>',
 
                         },
                         class: 'ghost',
-                        text: '🞭'
+                        text: '\u2715'
                        }).appendTo('#maincell');
 
 ghostEZdragbar.css('left',"-" + ghostEZdragbar.css('width'));
@@ -99,7 +99,7 @@ ghostbar.mousedown(mouseMoveNav);
 ghostEZdragbar.mousedown(mouseMoveNav);
 ghostToggleNav.on('click', function(e) {
     if ( ghostbar.css('display') == 'none' ){ //already hidden; toggle to visible
-        ghostToggleNav.text("🞭");
+        ghostToggleNav.text("\u2715");
         ghostToggleNav.css('width', 'auto');
         moveNav(185);
         ghostToggleNav.css('left',"-" + ghostToggleNav.css('width'));
@@ -109,7 +109,7 @@ ghostToggleNav.on('click', function(e) {
         $('.ghost').hide();
         moveNav(0);
         ghostToggleNav.css('left', 0);
-        ghostToggleNav.text('▶');
+        ghostToggleNav.text('\u25BA');
         ghostToggleNav.css('width', 'auto');
         ghostToggleNav.show();
     }
