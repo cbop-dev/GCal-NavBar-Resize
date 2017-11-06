@@ -4,7 +4,7 @@
 // @author cbop-dev (https://github.com/cbop-dev)
 // @version 0.4
 // @description Makes the G-Cal navigation sidebar re-sizable and hideable. Adds a column border and drag-button that can be dragged with the mouse, and a show/hide toggle button. Now works in new GCal UI (2017) as well as previous one!
-// @license MIT License (Expat)
+// @license MIT
 // @include       https://calendar.google.com/calendar/r*
 // @grant       none
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
